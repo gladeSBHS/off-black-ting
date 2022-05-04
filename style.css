@@ -14,11 +14,20 @@ h1 {
 }
 
 nav {
+    text-decoration: none;
     font-family: Altona Sans;
     font-size: 30px;
     text-align: center;
     grid-column: 1/2;
     grid-row: 2/3;
+}
+h1:hover{
+    color: white;
+}
+  
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -73,9 +82,11 @@ img {
 .beachinfo h1 {
     color: white;
     font-family: Altona Sans;
+    text-align: right;
 }
 
 .beachinfo {
+    font-size: 20px;
     font-family: Altona Sans;
     z-index: 1;
     color: white;
@@ -83,6 +94,7 @@ img {
     grid-row: 1/2;
     align-self: center;
     justify-self: center;
+    text-align: right;
 }
 
 .beachbox {
