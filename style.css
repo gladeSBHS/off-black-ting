@@ -24,6 +24,7 @@ nav {
 
 nav h1:hover {
     color: white;
+    text-decoration: underline;
 }
 
 
@@ -154,4 +155,32 @@ a {
     margin: 20px;
     grid-column: 2/4;
     grid-row: 1/4;
+}
+
+.shop{
+    margin-right:40px;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    list-style: none;
+}
+
+li {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.big {
+    height: 95vh;
+}
+
+
+ul {
+    grid-column: span 2;
+
+}
+ul p{
+    font-family: Altona Sans;
+    text-align: center;
+    font-size: 30px;
 }
