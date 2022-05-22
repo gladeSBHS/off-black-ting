@@ -187,6 +187,9 @@ ul p {
 }
 
 section {
-
-
+    margin-left: 20px;
+    font-family: Altona Sans;
+    z-index: 1;
+    grid-column: 2/4;
+    grid-row: 3/4;
 }
