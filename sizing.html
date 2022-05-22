@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 
 <head>
-    <title> </title>
-    <link rel="stylesheet" href="style.css">
+   <title> </title>
+   <link rel="stylesheet" href="style.css">
+   <script>
+      function calculate() {
+         var data = document.getElementById("sizeData").value;
+         if (data <= 32) {
+            document.getElementById("answer").innerHTML = "you are too small go eat some food you malnourished rat";
+         }
+         if (data >= 34 && data < 35) {
+            document.getElementById("answer").innerHTML = "your size is XXS";
+         }
+         if (data >= 36 && data < 37) {
+            document.getElementById("answer").innerHTML = "your size is XS";
+         }
+         if (data >= 38 && data < 39) {
+            document.getElementById("answer").innerHTML = "your size is S";
+         }
+         if (data >= 40 && data < 41) {
+            document.getElementById("answer").innerHTML = "your size is M";
+         }
+         if (data >= 42 && data < 43) {
+            document.getElementById("answer").innerHTML = "your size is L";
+         }
+         if (data >= 44 && data < 45) {
+            document.getElementById("answer").innerHTML = "your size is XL";
+         }
+         if (data >= 46 && data < 47) {
+            document.getElementById("answer").innerHTML = "your size is XXL";
+         }
+         if (data > 47) {
+            document.getElementById("answer").innerHTML =
+               "you are are too fat get of my website and go to the gym to useless pig";
+         }
+      }
+   </script>
 </head>
-<input type="number" name="size" id="sizeData">
+
 <body>
-    <div class="container">
-        <img class="logo" src="images/logo.png">
-        <div class="navimage"></div> 
-        <div class="beach"></div>
-        <nav>
-            <a href="index.html">
-               <h1>HOME</h1>
-            </a>
-            <a href="shop.html">
-               <h1>SHOP</h1>
-            </a>
-            <a href="sizing.html">
-               <h1>SIZING</h1>
-            </a>
-         </nav>
-      </div>
+
+   <div class="container">
+      <section>
+         <input type="number" name="size" id="sizeData">
+         <button type="submit" onclick="calculate()">Submit</button>
+         <p id="answer"></p>
+      </section>
+      <img class="logo" src="images/logo.png">
+      <div class="navimage"></div>
+      <div class="beach"></div>
+      <nav>
+         <a href="index.html">
+            <h1>HOME</h1>
+         </a>
+         <a href="shop.html">
+            <h1>SHOP</h1>
+         </a>
+         <a href="sizing.html">
+            <h1>SIZING</h1>
+         </a>
+      </nav>
+   </div>
