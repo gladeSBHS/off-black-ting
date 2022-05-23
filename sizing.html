@@ -2,37 +2,37 @@
 
 <head>
    <title>Off Black</title>
-   <link rel="stylesheet" href="style.css">
-   <script>
+   <link rel="stylesheet" href="style.css">  <!-- links index.html to stylesheet-->
+   <!-- adds all the javascript --><script>
       function calculate() {
-         var data = document.getElementById("sizeData").value;
-         if (data <= 32) {
-            document.getElementById("answer").innerHTML = "you are too small go eat some food you malnourished rat";
+         var data = document.getElementById("neckSize").value;
+         if (data <= 36) {
+            document.getElementById("answer").innerHTML = 'you are too small go eat some food you malnourished rat';
          }
-         if (data >= 34 && data < 35) {
-            document.getElementById("answer").innerHTML = "your size is XXS";
+         if (data >= 37 && data < 38) {
+            document.getElementById("answer").innerHTML = 'your size is XXS';
          }
-         if (data >= 36 && data < 37) {
-            document.getElementById("answer").innerHTML = "your size is XS";
+         if (data >= 39 && data < 40) {
+            document.getElementById("answer").innerHTML = 'your size is XS';
          }
-         if (data >= 38 && data < 39) {
-            document.getElementById("answer").innerHTML = "your size is S";
+         if (data >= 41 && data < 42) {
+            document.getElementById("answer").innerHTML = 'your size is S';
          }
-         if (data >= 40 && data < 41) {
-            document.getElementById("answer").innerHTML = "your size is M";
+         if (data >= 43 && data < 44) {
+            document.getElementById("answer").innerHTML = 'your size is M';
          }
-         if (data >= 42 && data < 43) {
-            document.getElementById("answer").innerHTML = "your size is L";
+         if (data >= 45 && data < 46) {
+            document.getElementById("answer").innerHTML = 'your size is L';
          }
-         if (data >= 44 && data < 45) {
-            document.getElementById("answer").innerHTML = "your size is XL";
+         if (data >= 47 && data < 48) {
+            document.getElementById("answer").innerHTML = 'your size is XL';
          }
-         if (data >= 46 && data < 47) {
-            document.getElementById("answer").innerHTML = "your size is XXL";
+         if (data >= 49 && data < 50) {
+            document.getElementById("answer").innerHTML = 'your size is XXL';
          }
-         if (data > 47) {
+         if (data > 50) {
             document.getElementById("answer").innerHTML =
-               "you are are too fat get of my website and go to the gym to useless pig";
+               'you are are too fat get of my website and go to the gym to useless pig';
          }
       }
    </script>
@@ -40,16 +40,17 @@
 
 <body>
 
-   <div class="container">
-      <section>
-         <input type="number" name="size" id="sizeData">
-         <button type="submit" onclick="calculate()">Submit</button>
+   <div class="container"><!-- holds main grid layout -->
+      <section><!-- holds the input and button-->
+         <h1>Input your neck size in cm's</h1>
+         <input type="number" name="neck" id="neckSize">
+         <input type="button" value='Submit' onclick="calculate()">
          <p id="answer"></p>
       </section>
-      <img class="logo" src="images/logo.png" alt="logo">
-      <div class="navimage"></div>
-      <div class="beach"></div>
-      <nav>
+      <img class="logo" src="images/logo.png" alt="logo"><!-- logo image -->
+      <div class="navimage"></div><!-- holds navimage and puts it in correct spot -->
+      <div class="beach"></div><!-- adds a beach picture and puts it in the correct place and puts a grid on it  -->
+      <nav><!-- holds all of the links on the nav bar -->
          <a href="index.html">
             <h1>HOME</h1>
          </a>
